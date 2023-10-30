@@ -48,12 +48,12 @@ const routes = [
         },
         children: [
             {
-                path: '/WorkBench/ChatGroup',
+                path: '/ChatGroup',
                 name: 'ChatGroup',
                 component: () => import('../views/ChatGroup/ChatGroup.vue')
             },
             {
-                path: '/WorkBench/User',
+                path: '/User',
                 name: 'User',
                 component: () => import('../views/User/User.vue')
             },
@@ -63,18 +63,18 @@ const routes = [
                 component: () => import('../views/Crawling/Crawling.vue')
             },
             {
-                path: '/WorkBench/Subscribe',
+                path: '/Subscribe',
                 name: 'Subscribe',
                 component: () => import('../views/Subscribe/Subscribe.vue')
             },
             {
-                path: '/WorkBench/PaperEdit',
+                path: '/PaperEdit',
                 name: 'PaperEdit',
                 component: () => import('../views/PaperEdit/PaperEdit.vue')
             }
             ,
             {
-                path: '/WorkBench/UserMsgForm',
+                path: '/UserMsgForm',
                 name: 'UserMsgForm',
                 component: () => import('../views/UserMsgForm/UserMsgForm.vue')
             }
