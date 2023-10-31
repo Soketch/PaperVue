@@ -2,8 +2,8 @@
   <div class="home">
     <div ref="banner" class="banner content-item-block">
       <div class="video-wrapper">
-        <img ref="video" class="HomeImg" preload="auto" muted loop playsinline autoplay
-          src="../../assets/docs/HomeMain.avif">
+        <!-- ref="video" preload="auto" muted loop playsinline autoplay -->
+        <img class="HomeImg" src="../../assets/docs/HomeMain.avif">
       </div>
       <h1 class="banner-title">
         激发创造 丰富生活
