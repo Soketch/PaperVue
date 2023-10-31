@@ -84,44 +84,6 @@ import EventBus from "../../helper/EventBus/index.js";
 import InputSearch from '../../components/Input-Search.vue';
 import Pagination from "../../components/Pagination.vue";
 
-const papersData = ([
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  },
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  },
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  },
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  },
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  },
-  {
-    title: "在线求助有哪位大佬知道怎么打开NCBI最快啊，网太慢了，我要写论文啊？",
-    content: "序列太大加载会很慢，用的人多网络不好也会影响。你可以试试用智慧芽Bio序列库查，我们公司一直在用，你申请一个账号就可以用了。智慧芽Patsnap Bio生物序列库，是行业最大的序列搜索平台，整合AI&人工标引数据。全面收录并深度加工全球专利、生物期刊、生物公开库中的蛋白质和核酸序列数据。",
-    author: 'Author-1',
-    date: '2022-10-1'
-  }
-])
 
 // 检索表
 const headers = ["题名", "作者", "来源", "发表时间", "类型", "使用次数"];
@@ -286,9 +248,11 @@ onMounted(() => {
 .Lables-ul {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: auto;
+  height: 90px;
+  overflow: hidden;
   margin-left: 15px;
 }
 
@@ -298,7 +262,7 @@ onMounted(() => {
   padding: 0 15px;
   height: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 2px 20px 20px 0;
+  margin: 0px 20px 10px 0;
   font-size: 12px;
   line-height: 20px;
   color: rgba(0, 0, 0, .8);
