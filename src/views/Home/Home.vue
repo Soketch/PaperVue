@@ -2,8 +2,12 @@
   <div class="home">
     <div ref="banner" class="banner content-item-block">
       <div class="video-wrapper">
-        <!-- ref="video" preload="auto" muted loop playsinline autoplay -->
-        <img class="HomeImg" src="../../assets/docs/HomeMain.avif">
+        <!--  -->
+        <!-- <img ref="video" preload="auto" muted loop playsinline autoplay class="HomeImg"
+          src="../../assets/docs/HomeMain.avif"> -->
+
+        <video ref="video" class="video" preload="auto" muted loop playsinline autoplay
+          poster="../../assets/docs/HomeMain.avif" src="" tabindex="-1"></video>
       </div>
       <h1 class="banner-title">
         激发创造 丰富生活
@@ -256,6 +260,7 @@ const getProductList = async () => {
   background: rgba(51, 112, 255, 0.2);
   position: relative;
 
+
   .video-wrapper {
     font-size: 0;
     position: absolute;
@@ -266,7 +271,7 @@ const getProductList = async () => {
     z-index: -1;
     overflow: hidden;
 
-    .HomeImg {
+    .video {
       object-fit: cover;
       width: 100%;
       height: 100%;
