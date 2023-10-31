@@ -31,7 +31,7 @@
             <div>{{ item.title }}</div>
           </li>
         </ul>
-        <router-link to="/products">
+        <router-link to="/Search">
           <div class="more">
             <!-- <span class="more-button">了解更多</span> -->
             <BD-button size="large">了解更多</BD-button>
